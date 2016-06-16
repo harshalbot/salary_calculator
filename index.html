@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Salary Calculator</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" href="main.js"></script>
+    <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <p class="heading">Salary Calculator </p>
+    <div class="income_div">
+        <div class="income_basic">
+            <span class="basic_pay_heading">Basic Pay </span>
+            <br />
+            <input type="number" placeholder="Basic Pay" class="basic_pay_input">
+        </div>
+        <div class="allowances_basic">
+            <span class="allowances_basic_heading">Allowances </span>
+            <br />
+            <input type="number" placeholder="HRA">
+            <br />
+            <input type="number" placeholder="LTA">
+            <br />
+            <input type="number" placeholder="Conveyance / Transport">
+            <br />
+            <input type="number" placeholder="Medical Allowance">
+            <br />
+            <input type="number" placeholder="Food Coupons">
+            <br />
+            <input type="number" placeholder="Others">
+            <br />
+        </div>
+        <div class="provident_fund">
+            <span class="provident_fund_heading">Provident Fund </span>
+            <br />
+            <ul style="list-style: none;">
+                <li>
+                    <input type="text" placeholder="Employer contribution"> </li>
+                <li>
+                    <input type="text" placeholder="Employee contribution"> </li>
+            </ul>
+        </div>
+        <div class="retirement">
+            <span class="retirement_heading">Retirement </span>
+            <br />
+            <input type="number" placeholder="Gratuity">
+            <br />
+            <input type="number" placeholder="Super Annutation">
+            <br />
+            <input type="number" placeholder="Insurance Premium by Employer">
+            <br />
+            <input type="number" placeholder="Other non-tax, non-cashable services by Employer">
+            <br />
+        </div>
+        <div class="bonus">
+            <span class="bonus_heading">Joining Bonus </span>
+            <br />
+            <input type="number" placeholder="Bonus">
+        </div>
+    </div>
+    <div class="calculated_salary_div">
+        <div class="earnings_positive_display">
+            <span class="calculated_salary_heading">Calculated Salary </span>
+            <p class="earnings_heading"> Earnings </p>
+            <p class="basic_result">Basic </p>
+            <p class="lta_result">LTA </p>
+            <p class="hra_result">HRA </p>
+            <p class="conveyance_result">Conveyance </p>
+            <p class="medical_result">Medical Reimbursement </p>
+            <p class="food_coupons_result">Food Coupons </p>
+            <p class="others_result">Others </p>
+            <p class="joining_bonus_result">Joining Bonus </p>
+        </div>
+        <span class="total_earning_result">Total </span>
+        <div class="deductions_div">
+            <span class="deductions_heading">Deductions </span>
+            <p class="employee_provident_fund_result">EPF </p>
+            <p class="income_tax_result">Income Tax </p>
+            <p class="professional_tax_result">Professional Tax </p>
+            <p class="total_deductions_result">Total Deductions </p>
+        </div>
+        <div class="display_total_salary">
+            <span class="total_salary">Total Salary </p>
+        </div>
+    </div>
+</body>
+
+</html>

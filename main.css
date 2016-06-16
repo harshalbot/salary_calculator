@@ -1,0 +1,540 @@
+body {
+    overflow-x: hidden;
+    background-color: #F5F5F5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+input:focus {
+    outline: none;
+    outline-style: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+
+*:focus {
+    outline: none;
+}
+
+.heading {
+    color: #00897B;
+}
+
+.basic_pay_heading {
+    color: #1EC980;
+}
+
+.allowances_basic_heading {
+    color: #2962FF;
+}
+
+.provident_fund_heading {
+    color: #8E24AA;
+}
+
+.retirement_heading {
+    color: #E64A19;
+}
+
+.bonus_heading {
+    color: #C51162;
+}
+
+.income_basic {
+    background-color: #ffffff;
+}
+
+.allowances_basic {
+    background-color: #ffffff;
+}
+
+.provident_fund {
+    background-color: #ffffff;
+}
+
+.retirement {
+    background-color: #ffffff;
+}
+
+.bonus {
+    background-color: #ffffff;
+}
+
+.earnings_positive_display {
+    background-color: #ffffff;
+    color: #9E9E9E;
+}
+
+.calculated_salary_heading {
+    color: #00ACC1;
+}
+
+.total_earning_result {
+    color: #e53935;
+}
+
+.deductions_div {
+    color: #9E9E9E;
+    background-color: #ffffff;
+}
+
+.deductions_heading {
+    color: #00897B;
+}
+
+.total_salary {
+    color: #43A047;
+}
+
+@media (min-width: 0px) and (max-width: 320px) {
+    input {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: .8em;
+        width: 90%;
+    }
+    span {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+    p {
+        margin-left: 5%;
+        font-size: 0.8em;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 1.7em;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .income_div {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .income_basic {
+        margin-top: 5%;
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .allowances_basic {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .provident_fund {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .retirement {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .bonus {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .earnings_positive_display {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+    }
+    .total_earning_result {
+        margin-left: 10%;
+    }
+    .deductions_div {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+        margin-top: 2%;
+    }
+    .deductions_heading {
+        font-size: 1em;
+    }
+    .total_salary {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 425px) {
+    input {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: .8em;
+        width: 90%;
+    }
+    span {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+    p {
+        margin-left: 5%;
+        font-size: 0.8em;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 1.7em;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .income_div {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .income_basic {
+        margin-top: 5%;
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .allowances_basic {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .provident_fund {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .retirement {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .bonus {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .earnings_positive_display {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+    }
+    .total_earning_result {
+        margin-left: 10%;
+    }
+    .deductions_div {
+        padding-top: 2%;
+        margin-bottom: 10%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+        margin-top: 2%;
+    }
+    .deductions_heading {
+        font-size: 1em;
+    }
+    .total_salary {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    input {
+        margin-top: 3%;
+        margin-left: 5%;
+        font-size: .8em;
+        width: 90%;
+    }
+    span {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+    p {
+        margin-left: 5%;
+        font-size: 0.8em;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 1.7em;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+    .income_div {
+        margin-left: 5%;
+        margin-right: 10%;
+    }
+    .income_basic {
+        margin-top: 5%;
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .allowances_basic {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .provident_fund {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .retirement {
+        padding-top: 2%;
+        margin-bottom: 7%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .bonus {
+        padding-top: 2%;
+        margin-bottom: 5%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .earnings_positive_display {
+        padding-top: 2%;
+        margin-bottom: 5%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+    }
+    .total_earning_result {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        padding-bottom: 2%;
+    }
+    .deductions_div {
+        padding-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 5%;
+        width: 85%;
+        margin-top: 2%;
+    }
+    .deductions_heading {
+        font-size: 1em;
+    }
+    .total_salary {
+        margin-left: 10%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    input {
+        margin-top: 5%;
+        margin-left: 5%;
+        font-size: .8em;
+        width: 70%;
+    }
+    span {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+    p {
+        margin-left: 5%;
+        font-size: 0.8em;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 1.7em;
+        margin-top: 5%;
+        margin-left: 15%;
+    }
+    .income_div {
+        margin-left: 15%;
+        margin-right: 10%;
+        width: 65%
+    }
+    .income_basic {
+        margin-top: 5%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .allowances_basic {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .provident_fund {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .retirement {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .bonus {
+        padding-top: 2%;
+        margin-bottom: 5%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .earnings_positive_display {
+        padding-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        width: 65%;
+    }
+    .total_earning_result {
+        margin-left: 18%;
+    }
+    .deductions_div {
+        padding-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 15%;
+        width: 65%;
+        margin-top: 2%;
+    }
+    .deductions_heading {
+        font-size: 1em;
+    }
+    .total_salary {
+        margin-left: 18%;
+    }
+}
+
+@media (min-width: 1025px) {
+    input {
+        margin-top: 3%;
+        margin-left: 5%;
+        font-size: 1em;
+        width: 90%;
+        outline-style: none;
+        box-shadow: none;
+        border-color: transparent;
+    }
+    span {
+        margin-left: 5%;
+        font-size: 1.5em;
+    }
+    p {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        margin-top: 0;
+    }
+    .heading {
+        font-size: 2.7em;
+        margin-top: 5%;
+        margin-left: 35%;
+    }
+    .income_div {
+        margin-left: 20%;
+        margin-right: 10%;
+        width: 60%;
+    }
+    .income_basic {
+        margin-top: 5%;
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 10px;
+        padding-bottom: 2%;
+    }
+    .allowances_basic {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .provident_fund {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .retirement {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .bonus {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+    }
+    .earnings_positive_display {
+        padding-top: 2%;
+        margin-bottom: 2%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        width: 60%;
+    }
+    .total_earning_result {
+        margin-left: 23%;
+        margin-bottom: 3%;
+        padding-bottom: 3%;
+    }
+    .deductions_div {
+        padding-top: 2%;
+        margin-bottom: 3%;
+        border-radius: 7px;
+        padding-bottom: 2%;
+        margin-left: 20%;
+        width: 60%;
+        margin-top: 2%;
+    }
+    .deductions_heading {
+        font-size: 1.7em;
+    }
+    .total_salary {
+        margin-left: 23%;
+    }
+}
