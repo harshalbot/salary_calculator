@@ -8,80 +8,87 @@
     <meta name='viewport' content='width=device-width, minimum-scale=1.0, maximum-scale=1.0'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.hiders').click(function() {
+            $(this).find(".show_them").slideToggle("slow");
+        });
+    });
+    </script>
 </head>
 
 <body>
     <p class="heading">Salary Calculator </p>
     <div class="income_div">
-        <div class="income_basic">
+        <div class="income_basic hiders">
             <span class="basic_pay_heading">Basic Pay </span>
             <br />
-            <input type="number" placeholder="Basic Pay" class="basic_pay_input">
+            <input type="number" placeholder="Basic Pay" class="basic_pay_input show_them" style="display:none;">
         </div>
-        <div class="allowances_basic">
+        <div class="allowances_basic hiders">
             <span class="allowances_basic_heading">Allowances </span>
             <br />
-            <input type="number" placeholder="HRA">
+            <input type="number" placeholder="HRA" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="LTA">
+            <input type="number" placeholder="LTA" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Conveyance / Transport">
+            <input type="number" placeholder="Conveyance / Transport" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Medical Allowance">
+            <input type="number" placeholder="Medical Allowance" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Food Coupons">
+            <input type="number" placeholder="Food Coupons" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Others">
+            <input type="number" placeholder="Others" class="show_them" style="display:none;">
             <br />
         </div>
-        <div class="provident_fund">
+        <div class="provident_fund hiders">
             <span class="provident_fund_heading">Provident Fund </span>
             <br />
             <ul style="list-style: none;">
                 <li>
-                    <input type="text" placeholder="Employer contribution"> </li>
+                    <input type="text" placeholder="Employer contribution" class="show_them" style="display:none;"> </li>
                 <li>
-                    <input type="text" placeholder="Employee contribution"> </li>
+                    <input type="text" placeholder="Employee contribution" class="show_them" style="display:none;"> </li>
             </ul>
         </div>
-        <div class="retirement">
+        <div class="retirement hiders">
             <span class="retirement_heading">Retirement </span>
             <br />
-            <input type="number" placeholder="Gratuity">
+            <input type="number" placeholder="Gratuity" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Super Annutation">
+            <input type="number" placeholder="Super Annutation" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Insurance Premium by Employer">
+            <input type="number" placeholder="Insurance Premium by Employer" class="show_them" style="display:none;">
             <br />
-            <input type="number" placeholder="Other non-tax, non-cashable services by Employer">
+            <input type="number" placeholder="Other non-tax, non-cashable services by Employer" class="show_them" style="display:none;">
             <br />
         </div>
-        <div class="bonus">
+        <div class="bonus hiders">
             <span class="bonus_heading">Joining Bonus </span>
             <br />
-            <input type="number" placeholder="Bonus">
+            <input type="number" placeholder="Bonus" class="show_them" style="display:none;">
         </div>
     </div>
-    <div class="calculated_salary_div">
+    <div class="calculated_salary_div ">
         <div class="earnings_positive_display">
             <span class="calculated_salary_heading">Calculated Salary </span>
-            <p class="earnings_heading"> Earnings </p>
-            <p class="basic_result">Basic </p>
-            <p class="lta_result">LTA </p>
-            <p class="hra_result">HRA </p>
-            <p class="conveyance_result">Conveyance </p>
-            <p class="medical_result">Medical Reimbursement </p>
-            <p class="food_coupons_result">Food Coupons </p>
-            <p class="others_result">Others </p>
-            <p class="joining_bonus_result">Joining Bonus </p>
+            <p class="earnings_heading "> Earnings </p>
+            <p class="basic_result ">Basic </p>
+            <p class="lta_result ">LTA </p>
+            <p class="hra_result ">HRA </p>
+            <p class="conveyance_result ">Conveyance </p>
+            <p class="medical_result ">Medical Reimbursement </p>
+            <p class="food_coupons_result ">Food Coupons </p>
+            <p class="others_result ">Others </p>
+            <p class="joining_bonus_result ">Joining Bonus </p>
         </div>
         <span class="total_earning_result">Total </span>
-        <div class="deductions_div">
-            <span class="deductions_heading">Deductions </span>
-            <p class="employee_provident_fund_result">EPF </p>
-            <p class="income_tax_result">Income Tax </p>
-            <p class="professional_tax_result">Professional Tax </p>
-            <p class="total_deductions_result">Total Deductions </p>
+        <div class="deductions_div ">
+            <span class="deductions_heading ">Deductions </span>
+            <p class="employee_provident_fund_result ">EPF </p>
+            <p class="income_tax_result ">Income Tax </p>
+            <p class="professional_tax_result ">Professional Tax </p>
+            <p class="total_deductions_result ">Total Deductions </p>
         </div>
         <div class="display_total_salary">
             <span class="total_salary">Total Salary </p>
