@@ -9,11 +9,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $('.hiders').click(function() {
-            $(this).find(".show_them").slideToggle("slow");
-        });
-    });
+  
     </script>
 </head>
 
@@ -23,22 +19,22 @@
         <div class="income_basic hiders">
             <span class="basic_pay_heading">Basic Pay </span>
             <br />
-            <input type="number" placeholder="Basic Pay" class="basic_pay_input show_them" style="display:none;">
+            <input type="number" placeholder="Basic Pay" class="basic_pay_input show_them">
         </div>
         <div class="allowances_basic hiders">
             <span class="allowances_basic_heading">Allowances </span>
             <br />
-            <input type="number" placeholder="HRA" class="show_them" style="display:none;">
+            <input type="number" placeholder="HRA" class="show_them">
             <br />
-            <input type="number" placeholder="LTA" class="show_them" style="display:none;">
+            <input type="number" placeholder="LTA" class="show_them">
             <br />
-            <input type="number" placeholder="Conveyance / Transport" class="show_them" style="display:none;">
+            <input type="number" placeholder="Conveyance / Transport" class="show_them">
             <br />
-            <input type="number" placeholder="Medical Allowance" class="show_them" style="display:none;">
+            <input type="number" placeholder="Medical Allowance" class="show_them">
             <br />
-            <input type="number" placeholder="Food Coupons" class="show_them" style="display:none;">
+            <input type="number" placeholder="Food Coupons" class="show_them">
             <br />
-            <input type="number" placeholder="Others" class="show_them" style="display:none;">
+            <input type="number" placeholder="Others" class="show_them">
             <br />
         </div>
         <div class="provident_fund hiders">
@@ -46,27 +42,27 @@
             <br />
             <ul style="list-style: none;">
                 <li>
-                    <input type="text" placeholder="Employer contribution" class="show_them" style="display:none;"> </li>
+                    <input type="text" placeholder="Employer contribution" class="show_them"> </li>
                 <li>
-                    <input type="text" placeholder="Employee contribution" class="show_them" style="display:none;"> </li>
+                    <input type="text" placeholder="Employee contribution" class="show_them"> </li>
             </ul>
         </div>
         <div class="retirement hiders">
             <span class="retirement_heading">Retirement </span>
             <br />
-            <input type="number" placeholder="Gratuity" class="show_them" style="display:none;">
+            <input type="number" placeholder="Gratuity" class="show_them">
             <br />
-            <input type="number" placeholder="Super Annutation" class="show_them" style="display:none;">
+            <input type="number" placeholder="Super Annutation" class="show_them">
             <br />
-            <input type="number" placeholder="Insurance Premium by Employer" class="show_them" style="display:none;">
+            <input type="number" placeholder="Insurance Premium by Employer" class="show_them">
             <br />
-            <input type="number" placeholder="Other non-tax, non-cashable services by Employer" class="show_them" style="display:none;">
+            <input type="number" placeholder="Other non-tax, non-cashable services by Employer" class="show_them">
             <br />
         </div>
         <div class="bonus hiders">
             <span class="bonus_heading">Joining Bonus </span>
             <br />
-            <input type="number" placeholder="Bonus" class="show_them" style="display:none;">
+            <input type="number" placeholder="Bonus" class="show_them">
         </div>
     </div>
     <div class="calculated_salary_div ">
@@ -81,18 +77,20 @@
             <p class="food_coupons_result ">Food Coupons </p>
             <p class="others_result ">Others </p>
             <p class="joining_bonus_result ">Joining Bonus </p>
+            <span class="total_earning_result">Total </span>
         </div>
-        <span class="total_earning_result">Total </span>
+        
         <div class="deductions_div ">
             <span class="deductions_heading ">Deductions </span>
             <p class="employee_provident_fund_result ">EPF </p>
             <p class="income_tax_result ">Income Tax </p>
             <p class="professional_tax_result ">Professional Tax </p>
             <p class="total_deductions_result ">Total Deductions </p>
-        </div>
-        <div class="display_total_salary">
+             <div class="display_total_salary">
             <span class="total_salary">Total Salary </p>
         </div>
+        </div>
+       
     </div>
 </body>
 
